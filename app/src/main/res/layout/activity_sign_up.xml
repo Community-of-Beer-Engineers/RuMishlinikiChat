@@ -44,7 +44,9 @@
             android:hint="@string/enter_name"
             android:id="@+id/etName"
             android:textColor="@color/colorText"
-            android:background="@color/colorTextBackground"/>
+            android:background="@color/colorTextBackground"
+            android:inputType="text"
+            />
         <EditText
             android:fontFamily="@font/gilroy_light"
 
@@ -57,7 +59,8 @@
             android:hint="@string/enter_email"
             android:id="@+id/etEmail"
             android:textColor="@color/colorText"
-            android:background="@color/colorTextBackground"/>
+            android:background="@color/colorTextBackground"
+            android:inputType="textEmailAddress"/>
         <EditText
             android:fontFamily="@font/gilroy_light"
 
