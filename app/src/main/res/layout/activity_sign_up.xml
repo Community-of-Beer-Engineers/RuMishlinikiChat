@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity"
+    android:gravity="center">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/labelSignUp"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/gilroy_bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:fontFamily="@font/gilroy_light"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:hint="@string/enter_name"
+            android:id="@+id/etName"
+            android:textColor="@color/colorText"
+            android:background="@color/colorTextBackground"/>
+        <EditText
+            android:fontFamily="@font/gilroy_light"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:hint="@string/enter_email"
+            android:id="@+id/etEmail"
+            android:textColor="@color/colorText"
+            android:background="@color/colorTextBackground"/>
+        <EditText
+            android:fontFamily="@font/gilroy_light"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:hint="@string/enter_password"
+            android:id="@+id/etPassword"
+            android:textColor="@color/colorText"
+            android:background="@color/colorTextBackground"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:fontFamily="@font/gilroy_light"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:hint="@string/enter_confirm_password"
+            android:id="@+id/etConfirmPassword"
+            android:inputType="textPassword"
+            android:textColor="@color/colorText"
+            android:background="@color/colorTextBackground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_signUp_login"
+                android:text="@string/btn_SignUp_Login"
+                android:fontFamily="@font/gilroy_bold"
+                android:layout_marginEnd="5dp"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_signUp_registration"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="@string/btn_SignUp_registration"
+                android:layout_marginStart="5dp"
+
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
