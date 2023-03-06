@@ -25,6 +25,7 @@ class SignUpActivity : AppCompatActivity() {
     private lateinit var password: EditText
     private lateinit var confirmPassword: EditText
     private lateinit var btnRegister: Button
+    private lateinit var btnLogin: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,8 +33,10 @@ class SignUpActivity : AppCompatActivity() {
         setContentView(activity_sign_up)
 
         auth = FirebaseAuth.getInstance()
-
         // Initialize the views here
+
+        btnLogin = findViewById(btn_signUp_login)
+
         userName = findViewById(etName)
         email = findViewById(etEmail)
         password = findViewById(etPassword)
@@ -41,6 +44,10 @@ class SignUpActivity : AppCompatActivity() {
         btnRegister = findViewById(btn_signUp_registration)
 
 
+        btnLogin.setOnClickListener {
+            val intent = Intent(this@SignUpActivity, LoginActivity::class.java)
+            startActivity(intent)
+        }
 
         btnRegister.setOnClickListener {
             val userName = userName.text.toString()
