@@ -1,4 +1,5 @@
 <resources>
+<!--    Sign Up-->
     <string name="app_name">RuMishliChat</string>
     <string name="enter_name">Enter Name</string>
     <string name="enter_email">Enter Email</string>
@@ -7,4 +8,7 @@
     <string name="labelSignUp">Sign Up</string>
     <string name="btn_SignUp_registration">Registration</string>
     <string name="btn_SignUp_Login">Login</string>
+<!--    Login       -->
+    <string name="labelLogin">Login</string>
+
 </resources>

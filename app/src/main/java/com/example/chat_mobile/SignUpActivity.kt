@@ -26,6 +26,7 @@ class SignUpActivity : AppCompatActivity() {
     private lateinit var confirmPassword: EditText
     private lateinit var btnRegister: Button
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(activity_sign_up)
@@ -38,6 +39,8 @@ class SignUpActivity : AppCompatActivity() {
         password = findViewById(etPassword)
         confirmPassword = findViewById(etConfirmPassword)
         btnRegister = findViewById(btn_signUp_registration)
+
+
 
         btnRegister.setOnClickListener {
             val userName = userName.text.toString()
