@@ -10,4 +10,5 @@
     <color name="colorText">#202020</color>
     <color name="colorTextBackground">#DFD9D9</color>
     <color name="colorTextButton">#FFFFFF</color>
+    <color name="colorBtnNonObligatory">#2E2C2C</color>
 </resources>

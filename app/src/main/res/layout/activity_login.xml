@@ -83,6 +83,7 @@
             android:fontFamily="@font/gilroy_bold"
             android:text="@string/btn_SignUp_registration"
             android:layout_marginStart="5dp"
+            android:backgroundTint="@color/colorBtnNonObligatory"
 
             android:padding="10dp"/>
     </LinearLayout>
