@@ -22,8 +22,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="675dp"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
-        app:layout_constraintEnd_toStartOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/bottom_nav"
+        android:id="@+id/bottomPanelNavBar"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
