@@ -14,15 +14,13 @@ class HomeActivity : AppCompatActivity() {
 
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        //TODO
-        // Нужно исправить переходы
 
         // Replace the initial fragment here
-        replaceFragment(HomeActivity)
+        replaceFragment(forumFragment())
 
         binding.bottomPanelNavBar.setOnItemSelectedListener {
             when(it.itemId) {
-                R.id.forum -> replaceFragment(ForumListActivity)
+                R.id.forum -> replaceFragment(forumFragment())
                 R.id.chats -> replaceFragment(ChatFragment())
                 R.id.other -> replaceFragment(OtherFragment())
                 R.id.setting -> replaceFragment(SettingFragment())

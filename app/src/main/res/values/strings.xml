@@ -15,6 +15,11 @@
     <string name="chat_icon">chat</string>
     <string name="forum_icon">forum</string>
     <string name="other_icon">other</string>
-    <string name="setting_icon">setting</string>
+    <string name="setting_icon">settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="chat">chat</string>
+    <string name="forum">forum</string>
+    <string name="other">other</string>
+    <string name="setting">setting</string>
 
 </resources>
